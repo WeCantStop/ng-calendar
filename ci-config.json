@@ -1,0 +1,15 @@
+{
+  "dockerFile": {
+    "type": "undefined",
+    "sync": false
+  },
+  "gitlabCi": {
+    "type": "common",
+    "sync": true,
+    "version": "default"
+  },
+  "charts": {
+    "type": "frontend",
+    "sync": true
+  }
+}

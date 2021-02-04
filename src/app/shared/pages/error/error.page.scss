@@ -1,0 +1,14 @@
+@import "template";
+
+:host {
+  @extend %overlay-container;
+  background: #fff;
+  .error-icon {
+    width: auto;
+    height: 250px;
+    margin-bottom: 48px;
+  }
+  .error-info {
+    @extend %tip-content;
+  }
+}

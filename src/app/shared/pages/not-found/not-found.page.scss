@@ -1,0 +1,90 @@
+@import "template";
+
+:host {
+  @extend %overlay-container;
+  background: #00b7ff;
+  .not-found-page {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    > .bg-message {
+      text-align: right;
+      position: absolute;
+      color: #4dccff;
+      font-weight: bolder;
+      font-size: 828px;
+      left: calc(50% - 550px);
+      top: -560px;
+    }
+    > .doctor {
+      position: absolute;
+      top: calc(50% - 250px);
+      left: calc(50% - 200px);
+      animation: floating 4s ease-in-out infinite;
+    }
+
+    > .knife {
+      position: absolute;
+      top: calc(50% + 30px);
+      left: calc(50% + 115px);
+      animation: spinning 6s linear infinite;
+    }
+
+    > .hint {
+      height: 56px;
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+    }
+  }
+}
+
+@keyframes floating {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 40px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes spinning {
+  0% {
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-top: -40px;
+    transform: rotate(180deg);
+  }
+  100% {
+    margin-top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes enlarge-fading {
+  0% {
+    font-size: 828px;
+    opacity: 1;
+    margin-left: 0%;
+  }
+  50% {
+    font-size: 1342px;
+    opacity: 0.5;
+    margin-left: -40%;
+  }
+  100% {
+    font-size: 1756px;
+    opacity: 0;
+    margin-left: -80%;
+  }
+}

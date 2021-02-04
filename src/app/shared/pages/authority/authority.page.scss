@@ -1,0 +1,19 @@
+@import "template";
+
+:host {
+  @extend %overlay-container;
+  background: #f0f2f5;
+  .authority-box {
+    @extend %flex-colum-center;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    .authority-icon {
+      margin-bottom: 13px;
+    }
+    .authority-info {
+      @extend %tip-content;
+    }
+  }
+}

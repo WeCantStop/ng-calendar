@@ -1,0 +1,1 @@
+export { SharedDirectivesModule } from './directives.module';

@@ -1,0 +1,14 @@
+{
+  "extends": "sy-tslint",
+  "rules": {},
+  "linterOptions": {
+    "exclude": [
+      "bin/",
+      "dist/",
+      "e2e/",
+      "chart/",
+      "misc/",
+      "node_modules/"
+    ]
+  }
+}
